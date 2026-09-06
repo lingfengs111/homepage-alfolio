@@ -4,6 +4,11 @@ title: about
 permalink: /
 subtitle: Ph.D. Student at <a href='https://www.tamu.edu/'>Texas A&amp;M University</a>
 
+profile:
+  align: right
+  image: lingfeng_profile_2327.jpg
+  image_circular: false
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
