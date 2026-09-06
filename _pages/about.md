@@ -23,6 +23,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<style>
+  @media (min-width: 576px) {
+    .post > article > .profile {
+      margin-top: -5.5rem;
+    }
+  }
+</style>
+
 I am a Ph.D. student at Texas A&M University, advised by [Prof. James Caverlee](https://people.engr.tamu.edu/caverlee/). My research focuses on **recommender systems** and **information retrieval**, with particular interests in sequential recommendation, efficient adaptation, and language-model-based retrieval.
 
 I am broadly interested in building recommendation and retrieval models that remain effective under practical constraints, including limited user history, constrained memory, and changing user intent.
