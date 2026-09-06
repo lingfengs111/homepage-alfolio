@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: My publications in recommender systems, information retrieval, and related areas.
 nav: true
 nav_order: 1
