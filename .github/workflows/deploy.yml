@@ -101,6 +101,13 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Refresh CSS cache keys 🔄
+        run: |
+          tailwind_css_hash="$(md5sum _site/assets/css/tailwind.css | cut -d ' ' -f 1)"
+          main_css_hash="$(md5sum _site/assets/css/main.css | cut -d ' ' -f 1)"
+          find _site -type f -name '*.html' -exec sed -i -E \
+            -e "s#(/assets/css/tailwind\.css\?v=)[[:xdigit:]]+#\1${tailwind_css_hash}#g" \
+            -e "s#(/assets/css/main\.css\?v=)[[:xdigit:]]+#\1${main_css_hash}#g" {} +
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
