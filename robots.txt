@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://lingfengs111.github.io/homepage-alfolio/sitemap.xml
+Sitemap: https://lingfengs111.github.io/sitemap.xml
