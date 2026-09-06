@@ -32,8 +32,3 @@
   --global-hover-color: #b509ac;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
 }
-
-/* Capitalize the homepage section labels supplied by the al-folio layout. */
-.post > article > h2 > a:is([href$="/news/"], [href$="/publications/"]) {
-  text-transform: capitalize;
-}

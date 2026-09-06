@@ -29,6 +29,10 @@ latest_posts:
       margin-top: -5.5rem;
     }
   }
+
+  .post > article > h2 > a:is([href$="/news/"], [href$="/publications/"]) {
+    text-transform: capitalize;
+  }
 </style>
 
 I am a Ph.D. student at Texas A&M University, advised by [Prof. James Caverlee](https://people.engr.tamu.edu/caverlee/). My research focuses on **recommender systems** and **information retrieval**, with particular interests in sequential recommendation, efficient adaptation, and language-model-based retrieval.
